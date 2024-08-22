@@ -38,16 +38,6 @@ source-repository head
 
 library
   default-language: Haskell2010
-  build-depends: tar-internal
-
-  reexported-modules:
-    Codec.Archive.Tar,
-    Codec.Archive.Tar.Entry,
-    Codec.Archive.Tar.Check,
-    Codec.Archive.Tar.Index
-
-library tar-internal
-  default-language: Haskell2010
   build-depends: base       >= 4.11  && < 5,
                  array                 < 0.6,
                  bytestring >= 0.10 && < 0.13,
